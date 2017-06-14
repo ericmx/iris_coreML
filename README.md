@@ -8,13 +8,13 @@ You need the following in order to create your own model and integrate it into y
 2. Numpy, Scipy(sklearn), Pandas
 3. Python coremltools library: http://pythonhosted.org/coremltools/
 
-How do I generate my own model?
+## How do I generate my own model?
 1. You can generally follow the Python script I have here in the project. Depending on your model you'll have to tweak some things, but the pattern is the same. After you fit your model, convert and save the model using coremltools. I highly recommend adding things like descriptions to your variables (as shown in my Python example), as well as not using any sort of crazy names in your variable names. That may give you trouble.
 2. Once you have saved your generated .mlmodel file, open Xcode, and then drag the file into your project folder. Xcode will automatically generate the model in Swift. 
 3. Instantiate an instance of the model. In this example, I just did let variableName = Iris() and you're good to go. Now you can excute the class methods.
 
 
-Common issues:
+## Common issues:
 
 WTF: My python stuff is all messed up
 Answer: Use Homebrew as your package manager
