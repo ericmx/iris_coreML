@@ -17,7 +17,9 @@ You need the following in order to create your own model and integrate it into y
 ## Common issues:
 
 WTF: My python stuff is all messed up
+
 Answer: Use Homebrew as your package manager
 
 WTF: My Core ML model can't be found?
+
 Answer: In the beta, for some reason right now the coremltools generated file in Ccode sometimes bugs out and doesn't show up. Clean your project and restart Xcode. You can view the Xcode generated model by clicking on the model, then under Model Class selecting the -> next to Swift Generated Code. You can change the method names, but if you don't you'll need to use those method names to instantiate the generated class. 
