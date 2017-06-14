@@ -6,6 +6,7 @@ You need the following in order to create your own model and integrate it into y
 
 1. Xcode 9 Beta:https://developer.apple.com/download/ (you probably need a developer log in here, but you do not need a PAID developer account)
 2. Numpy, Scipy(sklearn), Pandas
+2a. I recommend using Jupyter Notebook, but you don't have to.
 3. Python coremltools library: http://pythonhosted.org/coremltools/
 
 ## How do I generate my own model?
