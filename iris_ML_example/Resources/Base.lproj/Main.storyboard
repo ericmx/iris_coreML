@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bIg-kp-2pc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="hoV-r3-eog">
+            <objects>
+                <viewController id="zRu-gP-TbK" customClass="ViewController" customModule="iris_ML_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tJZ-ps-J15"/>
+                        <viewControllerLayoutGuide type="bottom" id="F5j-hy-F43"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5UC-6S-3dx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bap-qN-Iup">
+                                <rect key="frame" x="0.0" y="134.5" width="375" height="216"/>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-le-0k7">
+                                <rect key="frame" x="16" y="88" width="343" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepal L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fu-kb-Iqe" userLabel="Sepal Length">
+                                        <rect key="frame" x="0.0" y="1.5" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sepal W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-hX-qwC" userLabel="Sepal Length">
+                                        <rect key="frame" x="92" y="1.5" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petal L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntx-Y7-nCN" userLabel="Sepal Length">
+                                        <rect key="frame" x="184" y="1.5" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Petal W" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQQ-kM-TXA" userLabel="Sepal Length">
+                                        <rect key="frame" x="276" y="1.5" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iris Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flV-Po-dPL">
+                                <rect key="frame" x="117.5" y="414" width="140.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="flV-Po-dPL" firstAttribute="top" secondItem="Bap-qN-Iup" secondAttribute="bottom" constant="63.5" id="0kP-Vc-oKf"/>
+                            <constraint firstItem="Bap-qN-Iup" firstAttribute="leading" secondItem="5UC-6S-3dx" secondAttribute="leading" id="1rV-U7-UPB"/>
+                            <constraint firstItem="PLQ-le-0k7" firstAttribute="leading" secondItem="5UC-6S-3dx" secondAttribute="leadingMargin" id="B8a-6m-WRV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PLQ-le-0k7" secondAttribute="trailing" id="DDP-uL-lGf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="flV-Po-dPL" secondAttribute="trailing" constant="101" id="FAB-gU-NBo"/>
+                            <constraint firstItem="flV-Po-dPL" firstAttribute="leading" secondItem="5UC-6S-3dx" secondAttribute="leadingMargin" constant="101.5" id="Iwc-mx-MrO"/>
+                            <constraint firstItem="F5j-hy-F43" firstAttribute="top" secondItem="flV-Po-dPL" secondAttribute="bottom" constant="205" id="NGP-mu-8Ng"/>
+                            <constraint firstItem="PLQ-le-0k7" firstAttribute="top" secondItem="tJZ-ps-J15" secondAttribute="bottom" constant="24" id="QfP-Qg-zDB"/>
+                            <constraint firstItem="Bap-qN-Iup" firstAttribute="top" secondItem="PLQ-le-0k7" secondAttribute="bottom" constant="23" id="d0L-LF-An2"/>
+                            <constraint firstAttribute="trailing" secondItem="Bap-qN-Iup" secondAttribute="trailing" id="dcK-l7-5HT"/>
+                            <constraint firstItem="flV-Po-dPL" firstAttribute="centerX" secondItem="5UC-6S-3dx" secondAttribute="centerX" id="moY-zp-iFR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qNb-wF-6hz"/>
+                    <connections>
+                        <outlet property="irisLabel" destination="flV-Po-dPL" id="r17-d7-aSh"/>
+                        <outlet property="pickerView" destination="Bap-qN-Iup" id="7AO-Lk-aRB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kb9-eC-0ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1200.8" y="142.57871064467767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="63d-Ch-esq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bIg-kp-2pc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IMz-Zd-Mrl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1231632882" green="0.3411388105" blue="0.73520780460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RMy-Fp-MQp">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="zRu-gP-TbK" kind="relationship" relationship="rootViewController" id="KWR-gh-8OT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0I-0A-s7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="143"/>
+        </scene>
+    </scenes>
+</document>

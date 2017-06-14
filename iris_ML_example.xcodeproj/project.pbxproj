@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13B92BE1EF1717500236DBF /* PickerViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92BD1EF1717500236DBF /* PickerViewData.swift */; };
+		C13B92C41EF174CC00236DBF /* SepalLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92C31EF174CC00236DBF /* SepalLength.swift */; };
+		C13B92C61EF174F200236DBF /* SepalWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92C51EF174F200236DBF /* SepalWidth.swift */; };
+		C13B92C81EF1751500236DBF /* PetalLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92C71EF1751500236DBF /* PetalLength.swift */; };
+		C13B92CA1EF1752300236DBF /* PetalWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92C91EF1752300236DBF /* PetalWidth.swift */; };
+		C13B92D21EF17B5C00236DBF /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92D11EF17B5C00236DBF /* Feature.swift */; };
+		C13B92D41EF17F4000236DBF /* ViewControllerPickerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13B92D31EF17F4000236DBF /* ViewControllerPickerViewDelegate.swift */; };
+		C13B92D61EF1841300236DBF /* Iris.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C13B92D51EF1840500236DBF /* Iris.mlmodel */; };
 		C1AF66F61EF0BD8500BF12DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF66F51EF0BD8500BF12DD /* AppDelegate.swift */; };
 		C1AF66F81EF0BD8500BF12DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AF66F71EF0BD8500BF12DD /* ViewController.swift */; };
 		C1AF66FB1EF0BD8500BF12DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AF66F91EF0BD8500BF12DD /* Main.storyboard */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C13B92BD1EF1717500236DBF /* PickerViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewData.swift; sourceTree = "<group>"; };
+		C13B92C31EF174CC00236DBF /* SepalLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepalLength.swift; sourceTree = "<group>"; };
+		C13B92C51EF174F200236DBF /* SepalWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepalWidth.swift; sourceTree = "<group>"; };
+		C13B92C71EF1751500236DBF /* PetalLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetalLength.swift; sourceTree = "<group>"; };
+		C13B92C91EF1752300236DBF /* PetalWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetalWidth.swift; sourceTree = "<group>"; };
+		C13B92D11EF17B5C00236DBF /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		C13B92D31EF17F4000236DBF /* ViewControllerPickerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPickerViewDelegate.swift; sourceTree = "<group>"; };
+		C13B92D51EF1840500236DBF /* Iris.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Iris.mlmodel; path = iris_ML_example/Iris.mlmodel; sourceTree = SOURCE_ROOT; };
 		C1AF66F21EF0BD8500BF12DD /* iris_ML_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iris_ML_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AF66F51EF0BD8500BF12DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1AF66F71EF0BD8500BF12DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,15 +72,39 @@
 		C1AF66F41EF0BD8500BF12DD /* iris_ML_example */ = {
 			isa = PBXGroup;
 			children = (
+				C1AF67041EF0BD8500BF12DD /* Info.plist */,
+				C1AF670B1EF0BD9F00BF12DD /* Data Sources */,
+				C1AF670A1EF0BD9500BF12DD /* Resources */,
 				C1AF66F51EF0BD8500BF12DD /* AppDelegate.swift */,
 				C1AF66F71EF0BD8500BF12DD /* ViewController.swift */,
-				C1AF66F91EF0BD8500BF12DD /* Main.storyboard */,
-				C1AF66FF1EF0BD8500BF12DD /* Assets.xcassets */,
-				C1AF67011EF0BD8500BF12DD /* LaunchScreen.storyboard */,
-				C1AF67041EF0BD8500BF12DD /* Info.plist */,
+				C13B92D31EF17F4000236DBF /* ViewControllerPickerViewDelegate.swift */,
 				C1AF66FC1EF0BD8500BF12DD /* iris_ML_example.xcdatamodeld */,
+				C13B92D11EF17B5C00236DBF /* Feature.swift */,
 			);
 			path = iris_ML_example;
+			sourceTree = "<group>";
+		};
+		C1AF670A1EF0BD9500BF12DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF66F91EF0BD8500BF12DD /* Main.storyboard */,
+				C1AF67011EF0BD8500BF12DD /* LaunchScreen.storyboard */,
+				C1AF66FF1EF0BD8500BF12DD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1AF670B1EF0BD9F00BF12DD /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C13B92D51EF1840500236DBF /* Iris.mlmodel */,
+				C13B92BD1EF1717500236DBF /* PickerViewData.swift */,
+				C13B92C31EF174CC00236DBF /* SepalLength.swift */,
+				C13B92C51EF174F200236DBF /* SepalWidth.swift */,
+				C13B92C71EF1751500236DBF /* PetalLength.swift */,
+				C13B92C91EF1752300236DBF /* PetalWidth.swift */,
+			);
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +179,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1AF66F81EF0BD8500BF12DD /* ViewController.swift in Sources */,
+				C13B92C41EF174CC00236DBF /* SepalLength.swift in Sources */,
+				C13B92D21EF17B5C00236DBF /* Feature.swift in Sources */,
+				C13B92D41EF17F4000236DBF /* ViewControllerPickerViewDelegate.swift in Sources */,
+				C13B92BE1EF1717500236DBF /* PickerViewData.swift in Sources */,
+				C13B92D61EF1841300236DBF /* Iris.mlmodel in Sources */,
+				C13B92C61EF174F200236DBF /* SepalWidth.swift in Sources */,
+				C13B92C81EF1751500236DBF /* PetalLength.swift in Sources */,
+				C13B92CA1EF1752300236DBF /* PetalWidth.swift in Sources */,
 				C1AF66F61EF0BD8500BF12DD /* AppDelegate.swift in Sources */,
 				C1AF66FE1EF0BD8500BF12DD /* iris_ML_example.xcdatamodeld in Sources */,
 			);
@@ -186,6 +234,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -241,6 +291,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -316,6 +368,7 @@
 				C1AF67091EF0BD8500BF12DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
